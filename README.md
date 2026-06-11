@@ -1,7 +1,7 @@
 # Thesis Grotendorst, Julius
 Dieses Repository enthält alle wichtigen Dateien und Codes für das Webformular, den Agenten in Make.com und die Auswertung der Testfälle.
 
-# Ordner
+## Ordner
 
 **KI-Agent**
 - Agenten-Prompts: System- und Inputprompts für GruSi und HzL

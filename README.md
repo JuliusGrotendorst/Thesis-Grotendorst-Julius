@@ -20,4 +20,3 @@ Dieses Repository enthält alle wichtigen Dateien und Codes für das Webformular
 - Formulare: PDF-Vorlagen für die Website
 
 **Erklärvideo** 
-- zum Artefakt

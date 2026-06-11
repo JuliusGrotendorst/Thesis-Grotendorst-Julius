@@ -43,9 +43,8 @@ lib/
 ### 1. Neues Szenario anlegen
 
 1. Make.com öffnen → **Neues Szenario erstellen**
-2. Erstes Modul: **Webhooks › Custom webhook**
-3. Webhook-Name: `Borken SGB XII Antrag`
-4. **Speichern** → generierte URL kopieren
+2. Create Scenario → **import blueprint**
+3. Webhook → **Add**
 
 ### 2. Webhook-URL konfigurieren
 
@@ -56,19 +55,7 @@ MAKE_WEBHOOK_URL=https://hook.eu2.make.com/Ihre_URL_hier
 
 Starten Sie `npm run dev` und senden Sie einen Test-Antrag ab. Make.com erkennt die Datenstruktur automatisch.
 
-### 3. Empfohlene Folgemodule
-
-| Schritt | Modul | Zweck |
-|---------|-------|-------|
-| 1 | Custom webhook (Trigger) | Empfang der Antragsdaten |
-| 2 | JSON › Parse JSON (`payload`-Feld) | Strukturdaten extrahieren |
-| 3 | Google Sheets / Airtable | Antrag in Tabelle speichern |
-| 4 | Google Drive / SharePoint | Dateien ablegen (Ordner = Vorgangsnummer) |
-| 5 | Gmail / SMTP | Eingangsbestätigung an Antragsteller*in |
-| 6 | Gmail / SMTP | Benachrichtigung an Sachbearbeitung |
-| 7 | Error handler | Fehler protokollieren, ggf. IT informieren |
-
-### 4. Datenstruktur des Webhooks
+### 3. Datenstruktur des Webhooks
 
 Der Webhook empfängt `multipart/form-data` mit:
 

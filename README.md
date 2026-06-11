@@ -3,7 +3,7 @@ Dieses Repository enthält alle wichtigen Dateien und Codes für das Webformular
 
 ## Ordner
 
-**KI-Agent**
+[**KI-Agent**](Thesis-Grotendorst-Julius-KI-Agent) 
 - Agenten-Prompts: System- und Inputprompts für GruSi und HzL
 - Agenten-Knowledge: Wissensbasis (Knowledge-Dateien, Rechtsgrundlagen, Vorlagen für Antragsdatenblätter)
 - Make_Scenario_blueprint.json: Automatisierungsszenario (Make.com)

@@ -4,10 +4,11 @@ Next.js 14 · TypeScript · Tailwind CSS
 
 ## Lokale Einrichtung
 
-node.js (Standardeinstellungen) installieren
+1. node.js (Standardeinstellungen) installieren
 
-.env.local.example in .env.local umwandeln und Webhook-URL eintragen (siehe unten)
+2. .env.local.example in .env.local umwandeln und Webhook-URL eintragen (siehe unten)
 
+3. Terminal
 ```bash
 cd "folder"
 npm install

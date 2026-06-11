@@ -1,13 +1,16 @@
 # Webformular
 
-Next.js 14 · TypeScript · Tailwind CSS · React Hook Form · Zod · Zustand
+Next.js 14 · TypeScript · Tailwind CSS
 
 ## Lokale Einrichtung
 
+node.js (Standardeinstellungen) installieren
+
+.env.local.example in .env.local umwandeln und Webhook-URL eintragen (siehe unten)
+
 ```bash
+cd "folder"
 npm install
-cp .env.local.example .env.local
-# Webhook-URL eintragen (siehe unten)
 npm run dev
 ```
 

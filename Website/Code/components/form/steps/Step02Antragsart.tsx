@@ -8,7 +8,6 @@ import { useFormStore } from "@/lib/store/formStore";
 import FormStep from "../FormStep";
 import RadioGroup from "@/components/ui/RadioGroup";
 import Button from "@/components/ui/Button";
-import InfoBox from "@/components/ui/InfoBox";
 import { CONTACT } from "@/lib/constants";
 
 type FormValues = { antragsart: "neuantrag" | "weiterbewilligung" };
@@ -41,11 +40,6 @@ export default function Step02Antragsart() {
         <header className="mb-8">
           <h2 className="text-2xl font-bold text-neutral-900">Neuantrag – Persönliche Vorsprache erforderlich</h2>
         </header>
-
-        <InfoBox variant="warning">
-          <strong>Neuanträge können ausschließlich persönlich gestellt werden.</strong> Eine Online-Einreichung ist
-          für Erstanträge nach SGB XII gesetzlich nicht vorgesehen.
-        </InfoBox>
 
         <div className="mt-6 p-6 bg-brand-soft border border-brand-border rounded-sm space-y-3 text-sm">
           <p className="font-semibold text-brand-text">Sozialamt Borken · Zimmer 214</p>

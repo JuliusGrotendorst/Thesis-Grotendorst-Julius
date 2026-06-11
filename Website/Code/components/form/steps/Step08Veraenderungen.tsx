@@ -7,7 +7,6 @@ import { veraenderungenSchema } from "@/lib/schemas/antragSchema";
 import { useFormStore } from "@/lib/store/formStore";
 import FormStep from "../FormStep";
 import FileUpload from "@/components/ui/FileUpload";
-import InfoBox from "@/components/ui/InfoBox";
 
 type FormValues = z.infer<typeof veraenderungenSchema>;
 
@@ -33,12 +32,6 @@ export default function Step08Veraenderungen() {
       onNext={onNext}
       onBack={prevStep}
     >
-      <InfoBox>
-        Bitte beschreiben Sie alle Änderungen, die seit Ihrem letzten Bescheid eingetreten sind –
-        zum Beispiel Mietänderungen, Einkommensänderungen, Ein- oder Auszug von Personen,
-        Änderungen in der Betreuungssituation oder im Gesundheitszustand.
-        Wenn keine Änderungen vorliegen, lassen Sie das Feld leer.
-      </InfoBox>
 
       <div className="flex flex-col gap-1.5">
         <label htmlFor="veraenderungen" className="text-sm font-semibold text-neutral-800">

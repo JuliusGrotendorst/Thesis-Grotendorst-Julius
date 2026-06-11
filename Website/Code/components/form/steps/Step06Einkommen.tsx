@@ -12,7 +12,6 @@ import Input from "@/components/ui/Input";
 import Select from "@/components/ui/Select";
 import FileUpload from "@/components/ui/FileUpload";
 import Button from "@/components/ui/Button";
-import InfoBox from "@/components/ui/InfoBox";
 import { EINKOMMENSARTEN_OPTIONS, EINKOMMENSARTEN_DOCS } from "@/lib/constants";
 
 type FormValues = z.infer<typeof einkommenWbSchema>;
@@ -263,9 +262,6 @@ export default function Step06Einkommen() {
       {/* Keine Änderung → einfaches Upload-Feld */}
       {einkommenAenderung === "keine" && (
         <div className="space-y-3">
-          <InfoBox>
-            Auch bei unverändertem Einkommen sind aktuelle Nachweise einzureichen – es sei denn, Sie haben kein Einkommen.
-          </InfoBox>
           <button
             type="button"
             onClick={() => setKeinEinkommenKeine((v) => !v)}
@@ -300,10 +296,6 @@ export default function Step06Einkommen() {
       {/* Änderung vorhanden → pro Person: Name + Einkommensarten */}
       {einkommenAenderung === "aenderung" && (
         <div className="space-y-4">
-          <InfoBox>
-            Geben Sie die Einkommensarten für jede betroffene Person an und laden Sie die
-            entsprechenden Nachweise hoch. Fügen Sie weitere Personen über den Button unten hinzu.
-          </InfoBox>
 
           {personen.map((person, idx) => (
             <PersonBlock

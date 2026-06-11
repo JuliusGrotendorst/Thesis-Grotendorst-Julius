@@ -9,7 +9,6 @@ import RadioGroup from "@/components/ui/RadioGroup";
 import Select from "@/components/ui/Select";
 import Input from "@/components/ui/Input";
 import FileUpload from "@/components/ui/FileUpload";
-import InfoBox from "@/components/ui/InfoBox";
 import { z } from "zod";
 
 type FormValues = z.infer<typeof persoenlicheVerhaeltnisseSchema>;
@@ -88,10 +87,6 @@ export default function Step05PersVerhaeltnisse() {
 
             {isTrennungScheidung && (
               <div className="space-y-4">
-                <InfoBox variant="warning">
-                  Bei Trennung oder Scheidung sind ggf. folgende Unterlagen einzureichen.
-                  Laden Sie nur die Dokumente hoch, die auf Ihren Fall zutreffen.
-                </InfoBox>
                 <FileUpload
                   label="Scheidungsurteil / Trennungsnachweis"
                   fieldName="pv_scheidungsurteil"

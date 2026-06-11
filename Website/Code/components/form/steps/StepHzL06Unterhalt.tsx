@@ -7,7 +7,6 @@ import Input from "@/components/ui/Input";
 import DateInput from "@/components/ui/DateInput";
 import RadioGroup from "@/components/ui/RadioGroup";
 import Button from "@/components/ui/Button";
-import InfoBox from "@/components/ui/InfoBox";
 
 // Section I: people who may owe maintenance TO the applicant
 interface UnterhaltspflichtigePerson {
@@ -135,10 +134,6 @@ export default function StepHzL06Unterhalt() {
         <h3 className="text-base font-semibold text-neutral-800 border-b border-neutral-200 pb-2">
           I. Personen mit möglicher Unterhaltspflicht außerhalb des Haushalts
         </h3>
-        <InfoBox>
-          Geben Sie Personen an, die Ihnen gegenüber unterhaltspflichtig sein könnten (z. B. Eltern, volljährige Kinder,
-          getrennt lebende*r Ehegatte/in). Sozialhilfe ist nachrangig gegenüber zivilrechtlichen Unterhaltsansprüchen.
-        </InfoBox>
 
         {personen.length === 0 && (
           <p className="text-sm text-neutral-500 italic">Keine Personen eingetragen.</p>
@@ -207,9 +202,6 @@ export default function StepHzL06Unterhalt() {
         <h3 className="text-base font-semibold text-neutral-800 border-b border-neutral-200 pb-2">
           II. Unterhaltsberechtigte Personen außerhalb des Haushalts (denen gegenüber Sie unterhaltspflichtig sind)
         </h3>
-        <InfoBox>
-          Geben Sie Personen an, denen gegenüber Sie selbst unterhaltspflichtig sind (z. B. minderjährige Kinder, Ehegatte/in).
-        </InfoBox>
 
         {unterhaltsberechtigte.length === 0 && (
           <p className="text-sm text-neutral-500 italic">Keine Personen eingetragen.</p>
@@ -330,10 +322,6 @@ export default function StepHzL06Unterhalt() {
         <h3 className="text-base font-semibold text-neutral-800 border-b border-neutral-200 pb-2">
           III. Kinder aus nichtehelichen Verbindungen
         </h3>
-        <InfoBox>
-          Falls Sie minderjährige Kinder haben, die nicht aus einer Ehe oder eingetragenen Lebenspartnerschaft stammen,
-          geben Sie bitte das andere Elternteil an.
-        </InfoBox>
 
         {kinder.length === 0 && (
           <p className="text-sm text-neutral-500 italic">Keine Kinder eingetragen.</p>

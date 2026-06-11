@@ -10,7 +10,6 @@ import FormStep from "../FormStep";
 import RadioGroup from "@/components/ui/RadioGroup";
 import Input from "@/components/ui/Input";
 import FileUpload from "@/components/ui/FileUpload";
-import InfoBox from "@/components/ui/InfoBox";
 
 type FormValues = z.infer<typeof auslandsaufenthaltSchema>;
 
@@ -53,12 +52,6 @@ export default function Step11Veraenderungen() {
         <h3 className="font-semibold text-neutral-900 border-b border-neutral-200 pb-2">
           Auslandsaufenthalt
         </h3>
-
-        <InfoBox variant="warning">
-          Ein geplanter Auslandsaufenthalt ist frühzeitig mitzuteilen. Leistungen werden nur
-          für die ersten vier aufeinanderfolgenden Wochen gewährt; danach entfällt der
-          Leistungsanspruch (§ 41a SGB XII).
-        </InfoBox>
 
         <RadioGroup
           name="auslandsaufenthaltGeplant"

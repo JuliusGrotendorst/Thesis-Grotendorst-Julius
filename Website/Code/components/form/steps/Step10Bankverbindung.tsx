@@ -8,7 +8,6 @@ import { useFormStore } from "@/lib/store/formStore";
 import FormStep from "../FormStep";
 import RadioGroup from "@/components/ui/RadioGroup";
 import Input from "@/components/ui/Input";
-import InfoBox from "@/components/ui/InfoBox";
 
 type FormValues = z.infer<typeof bankverbindungSchema>;
 
@@ -66,10 +65,6 @@ export default function Step10Bankverbindung() {
 
       {bankverbindungAenderung === "aenderung" && (
         <div className="space-y-4">
-          <InfoBox>
-            Bitte geben Sie die Bankverbindung an, auf die eventuelle Leistungen überwiesen
-            werden sollen.
-          </InfoBox>
 
           <Input
             label="Name und Vorname des Kontoinhabers"

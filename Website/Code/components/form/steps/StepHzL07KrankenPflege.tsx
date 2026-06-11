@@ -8,7 +8,6 @@ import FormStep from "../FormStep";
 import Input from "@/components/ui/Input";
 import DateInput from "@/components/ui/DateInput";
 import Select from "@/components/ui/Select";
-import InfoBox from "@/components/ui/InfoBox";
 
 type HaushaltPerson = z.infer<typeof hzlHaushaltPersonSchema>;
 
@@ -95,10 +94,6 @@ export default function StepHzL07KrankenPflege() {
       onNext={onNext}
       onBack={prevStep}
     >
-      <InfoBox>
-        Bitte machen Sie Angaben zur Versicherung für alle im Haushalt lebenden Personen, einschließlich der
-        antragstellenden Person.
-      </InfoBox>
 
       {data.map((entry, idx) => (
         <fieldset key={idx} className="border border-neutral-200 rounded-sm p-5 space-y-5">

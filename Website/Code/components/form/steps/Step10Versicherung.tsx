@@ -8,7 +8,6 @@ import { versicherungSchema } from "@/lib/schemas/antragSchema";
 import { useFormStore } from "@/lib/store/formStore";
 import FormStep from "../FormStep";
 import Checkbox from "@/components/ui/Checkbox";
-import InfoBox from "@/components/ui/InfoBox";
 import Link from "next/link";
 import SignaturePad from "@/components/ui/SignaturePad";
 
@@ -282,10 +281,6 @@ export default function Step10Versicherung() {
           )}
         </div>
       </fieldset>
-
-      <InfoBox variant="warning">
-        Bitte lesen Sie die folgenden Erklärungen sorgfältig, bevor Sie fortfahren.
-      </InfoBox>
 
       {/* Erklärung gemäß Folgeantrag */}
       <div className="space-y-3">

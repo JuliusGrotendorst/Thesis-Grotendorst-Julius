@@ -6,7 +6,6 @@ import { hzlHaushaltPersonSchema } from "@/lib/schemas/antragSchema";
 import { useFormStore } from "@/lib/store/formStore";
 import FormStep from "../FormStep";
 import Input from "@/components/ui/Input";
-import InfoBox from "@/components/ui/InfoBox";
 import FileUpload from "@/components/ui/FileUpload";
 import { HZL_ABSETZBARE_BETRAEGE } from "@/lib/constants";
 
@@ -183,11 +182,6 @@ export default function StepHzL09Absetzbar() {
       onNext={onNext}
       onBack={prevStep}
     >
-      <InfoBox>
-        Kreuzen Sie alle absetzbaren Positionen an, die auf die jeweilige Person zutreffen, und geben Sie den monatlichen
-        Betrag sowie einen Nachweis (Versicherungspolice, Beitragsbescheinigung o.&nbsp;ä.) an. Diese Beträge werden bei
-        der Berechnung des anrechenbaren Einkommens berücksichtigt.
-      </InfoBox>
 
       {data.map((entry, idx) => (
         <PersonBlock

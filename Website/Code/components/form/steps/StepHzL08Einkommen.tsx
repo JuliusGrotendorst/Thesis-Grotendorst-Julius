@@ -6,7 +6,6 @@ import { hzlHaushaltPersonSchema } from "@/lib/schemas/antragSchema";
 import { useFormStore } from "@/lib/store/formStore";
 import FormStep from "../FormStep";
 import Input from "@/components/ui/Input";
-import InfoBox from "@/components/ui/InfoBox";
 import FileUpload from "@/components/ui/FileUpload";
 import { HZL_EINKOMMENSARTEN } from "@/lib/constants";
 
@@ -190,10 +189,6 @@ export default function StepHzL08Einkommen() {
       onNext={onNext}
       onBack={prevStep}
     >
-      <InfoBox>
-        Kreuzen Sie alle Einkommensarten an, die auf die jeweilige Person zutreffen, und geben Sie den monatlichen Betrag an.
-        Wählen Sie nichts an, wenn eine Person kein Einkommen hat.
-      </InfoBox>
 
       {data.map((entry, idx) => (
         <div key={idx} className="space-y-2">

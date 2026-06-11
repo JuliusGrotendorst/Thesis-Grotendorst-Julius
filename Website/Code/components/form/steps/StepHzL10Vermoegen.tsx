@@ -8,7 +8,6 @@ import FormStep from "../FormStep";
 import Input from "@/components/ui/Input";
 import DateInput from "@/components/ui/DateInput";
 import RadioGroup from "@/components/ui/RadioGroup";
-import InfoBox from "@/components/ui/InfoBox";
 import FileUpload from "@/components/ui/FileUpload";
 import { HZL_VERMOEGEN_ARTEN } from "@/lib/constants";
 
@@ -162,10 +161,6 @@ export default function StepHzL10Vermoegen() {
       onNext={onNext}
       onBack={prevStep}
     >
-      <InfoBox>
-        Kreuzen Sie alle Vermögensarten an, die auf die jeweilige Person zutreffen, und geben Sie den aktuellen Wert an.
-        Wählen Sie nichts an, wenn eine Person kein Vermögen besitzt.
-      </InfoBox>
 
       {data.map((entry, idx) => (
         <PersonBlock

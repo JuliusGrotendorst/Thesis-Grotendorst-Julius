@@ -11,7 +11,6 @@ import Input from "@/components/ui/Input";
 import DateInput from "@/components/ui/DateInput";
 import Select from "@/components/ui/Select";
 import RadioGroup from "@/components/ui/RadioGroup";
-import InfoBox from "@/components/ui/InfoBox";
 import FileUpload from "@/components/ui/FileUpload";
 
 type FormValues = z.infer<typeof hzlPersonalDataSchema>;
@@ -95,10 +94,6 @@ export default function StepHzL03PersonalData() {
       onNext={onNext}
       onBack={prevStep}
     >
-      <InfoBox>
-        Ihre Daten werden ausschließlich zur Bearbeitung Ihres Antrags verwendet.
-        Die Verarbeitung erfolgt nach Art. 6 Abs. 1 lit. c) und e) DSGVO i.V.m. §§ 67–78 SGB X.
-      </InfoBox>
 
       <Select
         label="Anrede"

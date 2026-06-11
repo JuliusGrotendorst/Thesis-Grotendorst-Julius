@@ -5,7 +5,6 @@ import { useFormStore } from "@/lib/store/formStore";
 import FormStep from "../FormStep";
 import FileUpload from "@/components/ui/FileUpload";
 import Input from "@/components/ui/Input";
-import InfoBox from "@/components/ui/InfoBox";
 import Button from "@/components/ui/Button";
 
 interface SonderDokument {
@@ -42,11 +41,6 @@ export default function StepHzL14Dokumente() {
       onNext={nextStep}
       onBack={prevStep}
     >
-      <InfoBox>
-        Gängige Nachweise (Personalausweis, Einkommensnachweise, Mietvertrag, Kontoauszüge etc.) wurden bereits in
-        den jeweiligen Schritten abgefragt. Laden Sie hier nur Unterlagen hoch, die dort nicht vorgesehen sind –
-        z. B. Erbscheinausfertigung, Schenkungsvertrag, Schwerbehindertenausweis, Betreuungsurkunde o. Ä.
-      </InfoBox>
 
       <div className="space-y-4">
         {slots.map((slot, idx) => (

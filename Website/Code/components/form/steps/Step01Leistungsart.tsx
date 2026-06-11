@@ -6,7 +6,6 @@ import { leistungsartSchema } from "@/lib/schemas/antragSchema";
 import { useFormStore } from "@/lib/store/formStore";
 import FormStep from "../FormStep";
 import RadioGroup from "@/components/ui/RadioGroup";
-import InfoBox from "@/components/ui/InfoBox";
 import { useState } from "react";
 
 type FormValues = { leistungsart: "grundsicherung" | "hilfe_zum_lebensunterhalt" };
@@ -34,10 +33,6 @@ export default function Step01Leistungsart() {
       onNext={onNext}
       isFirst
     >
-      <InfoBox>
-        Wenn Sie unsicher sind, welche Leistungsart für Sie zutrifft, rufen Sie uns gerne an.
-        Wir beraten Sie kostenlos und ohne Termin.
-      </InfoBox>
 
       <RadioGroup
         name="leistungsart"

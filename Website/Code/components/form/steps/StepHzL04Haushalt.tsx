@@ -10,7 +10,6 @@ import DateInput from "@/components/ui/DateInput";
 import Select from "@/components/ui/Select";
 import RadioGroup from "@/components/ui/RadioGroup";
 import Button from "@/components/ui/Button";
-import InfoBox from "@/components/ui/InfoBox";
 import FileUpload from "@/components/ui/FileUpload";
 import { HZL_VERHAELTNIS_OPTIONS } from "@/lib/constants";
 
@@ -392,10 +391,6 @@ export default function StepHzL04Haushalt() {
       onNext={onNext}
       onBack={prevStep}
     >
-      <InfoBox>
-        Erfassen Sie alle im Haushalt lebenden Personen (Ehegatte/in, Kinder, weitere Angehörige).
-        Die antragstellende Person selbst wird hier nicht eingetragen.
-      </InfoBox>
 
       {personen.length === 0 && (
         <p className="text-sm text-neutral-500 italic py-3">

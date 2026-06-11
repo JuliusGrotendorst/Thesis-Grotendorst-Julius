@@ -10,7 +10,6 @@ import Input from "@/components/ui/Input";
 import DateInput from "@/components/ui/DateInput";
 import Select from "@/components/ui/Select";
 import Checkbox from "@/components/ui/Checkbox";
-import InfoBox from "@/components/ui/InfoBox";
 import FileUpload from "@/components/ui/FileUpload";
 import { useState } from "react";
 
@@ -61,11 +60,6 @@ export default function Step03PersonalData() {
       onNext={onNext}
       onBack={prevStep}
     >
-      <InfoBox>
-        Ihre Daten werden ausschließlich zur Bearbeitung Ihres Antrags verwendet und nach
-        Abschluss des Verfahrens gemäß den gesetzlichen Aufbewahrungsfristen gelöscht.
-        Die Verarbeitung erfolgt über den Auftragsverarbeiter Make.com (AVV gem. Art. 28 DSGVO).
-      </InfoBox>
 
       {/* Anrede */}
       <Select

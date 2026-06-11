@@ -9,7 +9,6 @@ import FormStep from "../FormStep";
 import RadioGroup from "@/components/ui/RadioGroup";
 import Input from "@/components/ui/Input";
 import FileUpload from "@/components/ui/FileUpload";
-import InfoBox from "@/components/ui/InfoBox";
 import { z } from "zod";
 
 type FormValues = z.infer<typeof wohnkostenWbSchema>;
@@ -181,9 +180,6 @@ export default function Step09Wohnkosten() {
           <h4 className="text-sm font-semibold text-neutral-800 border-b border-neutral-200 pb-2">
             Unterlagen einreichen
           </h4>
-          <InfoBox>
-            Bitte reichen Sie die aktuellen Unterlagen des laufenden Jahres ein.
-          </InfoBox>
 
           <FileUpload
             label="Mietbescheinigung"

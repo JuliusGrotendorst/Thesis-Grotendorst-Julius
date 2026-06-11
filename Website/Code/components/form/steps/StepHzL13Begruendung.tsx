@@ -7,7 +7,6 @@ import { hzlBegruendungSchema } from "@/lib/schemas/antragSchema";
 import { useFormStore } from "@/lib/store/formStore";
 import FormStep from "../FormStep";
 import Input from "@/components/ui/Input";
-import InfoBox from "@/components/ui/InfoBox";
 
 type FormValues = z.infer<typeof hzlBegruendungSchema>;
 
@@ -57,9 +56,6 @@ export default function StepHzL13Begruendung() {
         <legend className="text-sm font-semibold text-neutral-800 border-b border-neutral-200 pb-2 w-full">
           Bankverbindung für Auszahlungen
         </legend>
-        <InfoBox>
-          Hilfe zum Lebensunterhalt wird auf das angegebene Konto überwiesen. Bitte geben Sie Ihre Bankverbindung an.
-        </InfoBox>
         <div className="grid grid-cols-2 gap-4">
           <Input
             label="IBAN"

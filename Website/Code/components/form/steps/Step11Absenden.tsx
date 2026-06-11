@@ -5,7 +5,6 @@ import { useState } from "react";
 import { useFormStore, FileRef } from "@/lib/store/formStore";
 import FormStep from "../FormStep";
 import Button from "@/components/ui/Button";
-import InfoBox from "@/components/ui/InfoBox";
 import { CONTACT } from "@/lib/constants";
 
 function findFirstIncompleteStep(
@@ -414,12 +413,6 @@ export default function Step11Absenden() {
           </ul>
         </div>
       )}
-
-      <InfoBox>
-        Nach dem Absenden erhalten Sie eine Bestätigung an <strong>{formData.email as string}</strong>.
-        Bitte heben Sie Ihre Vorgangsnummer auf. Die Bearbeitung dauert in der Regel zwei Wochen.
-        Bei Fragen: <a href={`tel:${CONTACT.sozialamt.replace(/\s/g, "")}`} className="underline">{CONTACT.sozialamt}</a>
-      </InfoBox>
 
       {error && (
         <div role="alert" className="p-4 bg-red-50 border border-red-200 border-l-4 border-l-brand-danger rounded-sm text-sm text-red-800">

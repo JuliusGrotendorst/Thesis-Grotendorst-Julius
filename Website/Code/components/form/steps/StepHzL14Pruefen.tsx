@@ -9,7 +9,6 @@ import { useFormStore } from "@/lib/store/formStore";
 import FormStep from "../FormStep";
 import Checkbox from "@/components/ui/Checkbox";
 import Select from "@/components/ui/Select";
-import InfoBox from "@/components/ui/InfoBox";
 import SignaturePad from "@/components/ui/SignaturePad";
 
 type FormValues = z.infer<typeof hzlVersicherungSchema>;
@@ -326,13 +325,6 @@ export default function StepHzL14Pruefen() {
           onChange={(e) => { setBescheidePerson(e.target.value); setBescheidePersonError(null); }}
         />
       </div>
-
-      <InfoBox variant="warning">
-        <strong>Wichtiger Hinweis:</strong> Wer vorsätzlich oder grob fahrlässig unrichtige oder unvollständige
-        Angaben macht oder es unterlässt, für die Leistung erhebliche Änderungen der Verhältnisse mitzuteilen,
-        handelt ordnungswidrig und kann nach § 117 SGB XII bestraft werden. Zu Unrecht erhaltene Leistungen
-        sind nach § 50 SGB X zu erstatten.
-      </InfoBox>
 
       <div className="bg-brand-soft border border-brand-border rounded-sm p-5 space-y-3 text-sm text-neutral-700">
         <p>

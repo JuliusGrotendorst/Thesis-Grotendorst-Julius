@@ -10,7 +10,6 @@ import DateInput from "@/components/ui/DateInput";
 import Select from "@/components/ui/Select";
 import RadioGroup from "@/components/ui/RadioGroup";
 import Button from "@/components/ui/Button";
-import InfoBox from "@/components/ui/InfoBox";
 import FileUpload from "@/components/ui/FileUpload";
 import { HZL_ANSPRUCH_ARTEN } from "@/lib/constants";
 
@@ -74,11 +73,6 @@ export default function StepHzL12Ansprueche() {
       onNext={onNext}
       onBack={prevStep}
     >
-      <InfoBox>
-        Sozialhilfe ist nachrangig gegenüber anderen Sozialleistungen. Falls Sie Ansprüche auf Leistungen anderer Träger
-        haben (z. B. Rentenversicherung, Unfallversicherung, SGB II), tragen Sie diese bitte ein.
-        Falls keine Ansprüche bestehen, können Sie diesen Abschnitt überspringen.
-      </InfoBox>
 
       {ansprueche.length === 0 && (
         <p className="text-sm text-neutral-500 italic py-3">

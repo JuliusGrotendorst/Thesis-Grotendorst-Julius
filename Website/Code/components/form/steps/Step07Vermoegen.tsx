@@ -10,7 +10,6 @@ import FormStep from "../FormStep";
 import RadioGroup from "@/components/ui/RadioGroup";
 import Input from "@/components/ui/Input";
 import FileUpload from "@/components/ui/FileUpload";
-import InfoBox from "@/components/ui/InfoBox";
 
 type FormValues = z.infer<typeof vermoegenWbSchema>;
 
@@ -73,10 +72,6 @@ export default function Step07Vermoegen() {
       {/* Keine Änderung → nur Standarddokumente */}
       {vermoegenAenderung === "keine" && (
         <div className="space-y-4">
-          <InfoBox>
-            Bitte reichen Sie auch bei unverändertem Vermögen die aktuellen
-            Kontoauszüge der letzten drei Monate als ein zusammengefasstes PDF ein.
-          </InfoBox>
           <FileUpload
             label="Kontoauszüge der letzten drei Monate"
             fieldName="verm_kontoauszug"
@@ -107,9 +102,6 @@ export default function Step07Vermoegen() {
       {/* Änderung vorhanden → Vermögenswerte + alle Dokumente */}
       {vermoegenAenderung === "aenderung" && (
         <div className="space-y-6">
-          <InfoBox>
-            Bitte geben Sie Ihren aktuellen Vermögensstand an. Auch geringe Beträge sind anzugeben.
-          </InfoBox>
 
           <fieldset className="space-y-4">
             <legend className="text-sm font-semibold text-neutral-800 mb-2">

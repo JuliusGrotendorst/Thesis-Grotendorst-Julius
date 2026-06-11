@@ -1,0 +1,16 @@
+.next/
+node_modules/
+.env.local
+.env*.local
+out/
+*.tsbuildinfo
+.DS_Store
+
+# Credentials (Service-Account-Keys etc.) — niemals committen
+credentials/
+
+# Generierte Testdaten — Re-Build über `npm run generate:all`
+generated/
+public/test-payloads/
+
+data/

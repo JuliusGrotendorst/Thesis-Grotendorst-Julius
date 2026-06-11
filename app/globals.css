@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    --font-sans: 'Inter', system-ui, sans-serif;
+  }
+
+  html {
+    font-family: var(--font-sans);
+    color: #5A1822;
+    background: #FFF8F8;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  :focus-visible {
+    outline: 2px solid #CC1728;
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible {
+    outline: 2px solid #CC1728;
+    outline-offset: 1px;
+  }
+}
+
+@layer components {
+  .field-error {
+    @apply text-brand-danger text-sm flex items-center gap-1.5 mt-1;
+  }
+
+  .form-input {
+    @apply w-full h-12 px-3.5 text-base border border-neutral-400 rounded-sm
+           bg-white text-neutral-800 font-sans
+           focus:outline-none focus:border-neutral-900 focus:ring-2 focus:ring-brand-accent/20
+           disabled:bg-neutral-50 disabled:cursor-not-allowed;
+  }
+
+  .form-input-error {
+    @apply border-brand-danger focus:border-brand-danger focus:ring-brand-danger/20;
+  }
+}

@@ -9,8 +9,6 @@ out/
 # Credentials (Service-Account-Keys etc.) — niemals committen
 credentials/
 
-# Generierte Testdaten — Re-Build über `npm run generate:all`
+# Laufzeit-Artefakte
 generated/
-public/test-payloads/
-
 data/

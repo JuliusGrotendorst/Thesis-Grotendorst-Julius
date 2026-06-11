@@ -18,7 +18,7 @@ npm run dev
 ### 1. Neues Szenario anlegen
 
 1. Make.com öffnen → **Neues Szenario erstellen**
-2. Create Scenario → [**import blueprint**](KI-Agent/Make_Scenario_blueprint.json)
+2. Create Scenario → [**import blueprint**](https://github.com/JuliusGrotendorst/Thesis-Grotendorst-Julius/blob/b910a24367370348a6288b60aa369af3e5d0fe85/KI-Agent/Make_Scenario_blueprint.json) 
 3. Webhook → **Add**
 
 ### 2. Webhook-URL konfigurieren

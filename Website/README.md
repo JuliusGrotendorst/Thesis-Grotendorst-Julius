@@ -1,4 +1,4 @@
-# Stadt Borken – Online-Antrag Sozialhilfe (SGB XII)
+# Webformular
 
 Next.js 14 · TypeScript · Tailwind CSS · React Hook Form · Zod · Zustand
 
@@ -13,37 +13,12 @@ npm run dev
 
 Öffnen Sie [http://localhost:3000](http://localhost:3000).
 
-## Projektstruktur
-
-```
-app/
-  api/submit/route.ts        API-Route: Validierung + Weiterleitung an Make.com
-  antrag/sozialhilfe/        11-schrittiges Online-Formular
-  sozialhilfe/               Übersichtsseite Sozialhilfe
-  impressum, datenschutz,    Statische Pflichtseiten
-  barrierefreiheit, kontakt/
-  not-found.tsx              Angepasste 404-Seite
-
-components/
-  layout/                    Header, Footer, ServiceBar, Breadcrumb
-  ui/                        Button, Input, Select, RadioGroup, Checkbox,
-                             FileUpload, ProgressBar, InfoBox
-  form/
-    FormStep.tsx             Navigation zwischen Schritten
-    steps/Step01–Step11      Alle 11 Formularschritte
-
-lib/
-  schemas/antragSchema.ts    Zod-Schema (identisch client + server)
-  store/formStore.ts         Zustand-Store mit localStorage-Persistenz
-  constants/index.ts         Konfiguration: Schritte, Felder, Kontakt
-```
-
 ## Make.com-Szenario einrichten
 
 ### 1. Neues Szenario anlegen
 
 1. Make.com öffnen → **Neues Szenario erstellen**
-2. Create Scenario → **import blueprint**
+2. Create Scenario → [**import blueprint**](KI-Agent/Make_Scenario_blueprint.json)
 3. Webhook → **Add**
 
 ### 2. Webhook-URL konfigurieren

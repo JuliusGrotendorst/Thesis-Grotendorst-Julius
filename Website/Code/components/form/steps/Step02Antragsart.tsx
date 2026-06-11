@@ -25,7 +25,7 @@ export default function Step02Antragsart() {
   const [showVisitRequired, setShowVisitRequired] = useState(false);
 
   const onNext = handleSubmit((data) => {
-    if (!isHzL && data.antragsart === "neuantrag") {
+    if (data.antragsart === "neuantrag") {
       setShowVisitRequired(true);
       return;
     }

@@ -9,7 +9,7 @@ Dieses Repository enthält alle wichtigen Dateien und Codes für das Webformular
 - Make_Scenario_blueprint.json: Automatisierungsszenario (Make.com)
 - Screenshots: API- und Operations-Verbrauch
 
-**Testfälle**
+[**Testfälle**](https://github.com/JuliusGrotendorst/Thesis-Grotendorst-Julius/tree/c7122d11ad74e4251080d6a8929e81adb8f9ce0f/Testf%C3%A4lle-Auswertung)
 - Personenakten: Bestandsakten von 60 fiktiven Testpersonen (HzL und Grundsicherung)
 - Weiterbewilligungsakten: eingereichte Testanträge, Iteration 1 bis 3
 - Agenten-Output: vom Agenten erstellte E-Mails (PDF), je Iteration plus ein Vergleichstest mit stärkerem Modell
